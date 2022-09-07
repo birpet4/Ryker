@@ -1,9 +1,4 @@
-/**
-* Template Name: Tempo - v4.8.0
-* Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
     "use strict";
   
@@ -188,6 +183,7 @@
     });
   
   })()
+
 
   
 
