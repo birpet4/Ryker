@@ -1,7 +1,7 @@
 body {
-    font-family: 'Poppins';font-size: 20px;
+    /* font-family: 'Heebo, Helvetica, Arial, sans-serif';font-size: 20px; */
     /* font-family: "Times New Roman", Times, serif;font-size: 20px; */
-
+  font-size: 18px;
 }
 
 body, html {
@@ -9,16 +9,52 @@ body, html {
     margin: 0;
 }
 
+.parallax3 {
+  /* The image used */
+  /* background-image: url("img/paralax.jpg");
+  background: linear-gradient(#000000,#161616 ); */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.705), 
+      rgb(0, 0, 0)
+    ), url("img/paralax3.jpg");
+  /* Set a specific height */
+  min-height: 250px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  /* background-image: url("img/paralax.jpg");
+  background: linear-gradient(#000000,#161616 ); */
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.705), 
+      rgba(0, 0, 0, 0.651)
+    ), url("img/hero-bg.webp");
+  /* Set a specific height */
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .parallax {
     /* The image used */
     /* background-image: url("img/paralax.jpg");
     background: linear-gradient(#000000,#161616 ); */
     background-image: linear-gradient(
-        rgb(41, 41, 41), 
-        rgb(37, 36, 36)
-      );
+        rgba(0, 0, 0, 0.705), 
+        rgb(0, 0, 0)
+      ), url("img/paralax2.jpg");
     /* Set a specific height */
-    min-height: 100px;
+    min-height: 200px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -152,7 +188,8 @@ body, html {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #493c3e;
+  color: #000000;
+  font-weight:500;
 }
 
 .navbar .dropdown ul a i {
@@ -327,8 +364,8 @@ body, html {
     align-items: center;
 
     background-image: linear-gradient(
-        rgba(41, 41, 41, 0.684), 
-        rgba(37, 36, 36, 0.918)
+        rgba(17, 17, 17, 0.684), 
+        rgba(0, 0, 0, 0.918)
       );
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
@@ -376,8 +413,9 @@ video#heroVideo {
 }
 
 .hero .intro-text .description {
-    color: grey;
+    color: rgb(199, 199, 199);
     font-weight: 400;
+    font-size: 22px;
 }
 
 .hero .intro-text .button {
@@ -414,46 +452,41 @@ video#heroVideo {
 }
 
 .consulting {
-    background: linear-gradient(to right, #181818, #09070bd5 25%, #6b6b6b 25%, #888888 50%);
+    /* background: linear-gradient(to right, #181818, #09070bd5 25%, #6b6b6b 25%, #888888 50%); */
+    background-color: #0a0a0a;
     padding: 5% 10% 0 10%;
+    padding-bottom: 100px;
 }
 
 .consulting .header {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     margin-top: 3rem;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
+    margin-left: 9rem;
 }
 
 .consulting .header:first-child {
-    display: flex;
 }
 
 .consulting .header h1 {
-    flex-basis: 20%;
     font-size: 30px;
 }
 
 .consulting .header h1 hr {
-    width: 20%;
+    width: 5%;
     border: 1px solid white;
     opacity: 1;
 }
 
 .consulting .header .title {
-    flex-basis: 20%;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-
+    color: rgb(255, 255, 255);
 }
 
 .consulting .header .description {
-    color: white;
+    color: rgb(177, 177, 177);
     font-size: 18px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    text-transform: uppercase;
+
 }
 
 .consulting .cards-container {
@@ -463,20 +496,65 @@ video#heroVideo {
 }
 
 .consulting .design-card {
-    margin-bottom: 100px;
-    max-height: 300px;
+    margin-bottom: 0px;
+    height: 300px;
     width: 80%;
     display: flex;
     flex-direction: row;
 
     color: white;
     background-color: #181819;
-    -webkit-box-shadow: 0px 0px 40px -6px #00000042; 
-    box-shadow: 0px 0px 40px -6px #00000049;
+    /* -webkit-box-shadow: 0px 0px 40px -6px #00000042; 
+    box-shadow: 0px 0px 40px -6px #00000049; */
+}
+
+.consulting #soft-consulting {
+  background-color: rgb(32, 32, 32);
+}
+
+.consulting #sales {
+  background-color: rgb(32, 32, 32);
+}
+
+.consulting .design-card .img-container {
+  width: 50%;
+}
+
+.consulting .design-card #market {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.918), 
+    rgba(0, 0, 0, 0.877)
+  ), url("img/market-research\ \(1\).webp") no-repeat center;
+  background-size: cover;
+}
+
+.consulting .design-card #sales {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.911), 
+    rgba(0, 0, 0, 0.925)
+  ), url("img/sales.webp") no-repeat center;
+  background-size: cover;
+}
+
+.consulting .design-card #soft {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.89), 
+    rgba(0, 0, 0, 0.836)
+  ), url("img/soft-landing.webp") no-repeat center;
+  background-size: cover;
+}
+
+.consulting .design-card #project {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.884), 
+    rgba(0, 0, 0, 0.856)
+  ), url("img/projectmanagement-hr.webp") no-repeat center;
+  background-size: cover;
 }
 
 .consulting .design-card .content {
     width: 50%;
+    border: 1px solid #dfdfdf49
 }
 
 .consulting .design-card .content .card-title {
@@ -492,7 +570,8 @@ video#heroVideo {
 }
 
 .consulting .design-card .content .bullets {
-    color: #8F8F8F;
+    color: #dfdfdf;
+    font-size:22px;
     margin-left: 55px;
 }
 
@@ -506,110 +585,83 @@ video#heroVideo {
 }
 
 .capital-raise {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px 500px;
+  background-color: #000000e8;
+  color: rgb(255, 255, 255);
 }
 
 .capital-raise .header{
-    background-color: white;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0 auto;
-    margin-top: 5rem;
-    padding-top: 21px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 
     display: block; /* hvr css */
     border-radius: 50px;
     text-align: center;
-    height: 70px;
-    width: 70%;
-
-    -webkit-box-shadow: 0px 0px 40px -6px #000000cd; 
-    box-shadow: 0px 0px 40px -6px #000000a8;
 }
 
-.capital-raise .section-header {
-    grid-column: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-
-    text-align: center;
-    color: black;
-    vertical-align: middle;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    background: linear-gradient(
-        #cfcfcf, 
-        #f0f0f0
-      );
-      
-    -webkit-box-shadow: 0px 0px 40px -6px #000000; 
-    box-shadow: 0px 0px 40px -6px #000000;
+.capital-raise .header hr{
+  width: 5%;
+  border: 1px solid rgb(255, 255, 255);
+  opacity: 1;
+  margin: 20px auto;
 }
 
-.capital-raise .section-header .section-hero {
-    margin-top: 10rem;
-    padding: 100px;
+.capital-raise .header .title {
+  font-size: 30px;
 }
 
-.capital-raise .section-header .description {
-    text-transform: uppercase;
-    font-size: medium;
-}
-
-.capital-raise .section-header img {
-    height: 100%;
-    width: 100%;
+.capital-raise .header .description{
+  width: 70%;
+  align-items: center;
+  margin: 20px auto;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .capital-raise .content {
-    color: white;
-    text-align: center;
-    padding-top: 50px;
+  margin: 0 300px 0 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 150px;
+  gap: 20px;
+  text-align: center;
+}
+.capital-raise .content .capital-card{
+  width: 50%;
+  background-color: rgb(32 32 32);
+  border-radius: 10px;
+  padding: 40px;
 }
 
-.capital-raise .investors{
-    grid-column: 1;
-    grid-row: 1;
-    background: linear-gradient(
-        #B8B8B8, 
-        #808080
-      )
+.capital-raise .content .capital-card .card-icon i{
+  font-size: 30px;
+  color: rgba(255, 255, 160, 0.76);
+
+  padding-bottom: 20px;
 }
 
-.capital-raise .crowdfunding{
-    grid-column: 1;
-    grid-row: 2;
-    background: linear-gradient(
-        #343434, 
-        #5F5F5F
-      )
+.capital-raise .content .capital-card .card-title{
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: white;
 }
 
-.capital-raise .business-documentation{
-    grid-column: 3;
-    grid-row: 1;
-    background: linear-gradient(
-        #000000, 
-        rgba(95, 95, 95, 0.788)
-      )
+.capital-raise .content .capital-card .card-content{
+  font-size: 16px;
 }
 
-.capital-raise .legal-support{
-    grid-column: 3;
-    grid-row: 2;
-    background: linear-gradient(
-        #414141, 
-        #545454c5
-      )
+.capital-raise .content .capital-card .card-content p{
+  color: rgb(233, 233, 233);
 }
 
 .outsourcing {
-    background: linear-gradient(#252525, #000000);
-    color: white;
-    padding: 5% 0 0 0;
+    background:  #0f0f0f;
+    color: rgb(255, 255, 255);
+    padding: 2% 0 0 0;
+    padding-bottom: 100px;
 }
 
 .outsourcing .header {
@@ -618,10 +670,11 @@ video#heroVideo {
     margin: 100px;
     margin-top: 50px;
     margin-bottom: 80px;
+
 }
 
 .outsourcing .header .title {
-    font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
 }
 
 .outsourcing .header hr {
@@ -632,7 +685,7 @@ video#heroVideo {
 }
 
 .outsourcing .description {
-    width: 70%;
+    width: 50%;
     align-items: center;
     margin: 20px auto;
     color: grey;
@@ -640,14 +693,16 @@ video#heroVideo {
 }
 
 .outsourcing .cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
     align-items: center;
-    padding: 40px;
-    margin: 20px;
+    justify-items: center;
+    text-align: center;
+    margin: 0 300px;
 }
 
-.outsourcing .cards .design {
+/* .outsourcing .cards .design {
     background-color: #2F2F2F;
 }
 
@@ -661,18 +716,21 @@ video#heroVideo {
 
 .outsourcing .cards .sales {
     background: linear-gradient(#AAAAAA, #AAAAAA);
-}
+} */
 
 .outsourcing .design-card {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
     align-items: center;
 
     width: 70%;
     height: 250px;
     margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 40px -6px #000000; 
-    box-shadow: 0px 0px 40px -6px #000000;
+    border-radius: 10px;
+
+    /* -webkit-box-shadow: 0px 0px 15px -6px #000000; 
+    box-shadow: 0px 0px 15px -6px #000000; */
 }
 
 .outsourcing .design-card .title-wrapper {
@@ -684,14 +742,14 @@ video#heroVideo {
 .outsourcing .design-card .card-title {
     text-align: center;
     color: black;
-    background-color: white;
+    background-color: rgb(209, 209, 209);
     font-weight: bold;
-    width: 35%;
+    width: 50%;
     display: inline-block;
 
-    border-radius: 100px;
+    border-radius: 10px;
     color: rgb(0, 0, 0);
-    padding: 15px 50px;
+    padding: 10px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -699,10 +757,12 @@ video#heroVideo {
 }
 
 .outsourcing .design-card .content {
-    grid-column: 2;
+    grid-column: 1;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 16px;
 }
 
 .partners {
@@ -712,9 +772,9 @@ video#heroVideo {
 }
 
 .partners .header {
-    margin: 100px 150px 100px 100px;
-    font-family: "Times New Roman", Times, serif;
-
+    margin: 0 150px 100px 100px;
+    padding-top: 150px;
+    font-size: 30px;
 }
 
 .partners .header hr {
@@ -742,9 +802,9 @@ video#heroVideo {
 }
 
 .contact {
-    background: linear-gradient(134.69deg, #353535 1.86%, rgba(77, 77, 77, 0.29) 107.99%);
+    background: linear-gradient(134.69deg, #dadada 1.86%, rgba(126, 126, 126, 0.29) 107.99%);
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -752,12 +812,12 @@ video#heroVideo {
 .contact .header {
     margin-bottom: 70px;
     font-weight: bolder;
-    font-family: "Times New Roman", Times, serif;
+    
 }
 
 .contact .header hr {
     width: 5%;
-    border: 1px solid rgb(254, 254, 254);
+    border: 1px solid rgb(0, 0, 0);
     opacity: 1;
     margin: 10px auto;
 }
@@ -852,7 +912,7 @@ footer {
     padding-top: 30px;
     background-color: black;
     color: rgb(184, 184, 184);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 footer h6 {
@@ -863,9 +923,24 @@ footer a {
     text-decoration: none;
 }
 
+footer .social a {
+  color: rgba(255, 255, 255, 0.438);
+}
+
 footer .copyright {
     color: grey;
     font-size: 12px;
+
+}
+
+footer .copyright a {
+  color: rgba(255, 255, 255, 0.438);
+  margin-left: 10px;
+
+}
+footer span {
+  color: grey;
+  font-size: 12px;
 }
 
 
