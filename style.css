@@ -1,5 +1,5 @@
 body {
-    /* font-family: 'Heebo, Helvetica, Arial, sans-serif';font-size: 20px; */
+  font-family: 'Merriweather';font-size: 20px;
     /* font-family: "Times New Roman", Times, serif;font-size: 20px; */
   font-size: 18px;
 }
@@ -409,7 +409,7 @@ video#heroVideo {
 }
 
 .hero .intro-text .title {
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif; */
 }
 
 .hero .intro-text .description {
@@ -741,20 +741,39 @@ video#heroVideo {
     margin: 10px auto;
 }
 
-.contact .contact-form {
-    margin: 0 auto;
-    text-align: left;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    grid-template-rows: auto;
-    min-height: 200px;
+.contact .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
 }
 
+.contact .description {
+  flex-basis: 30%;
+  margin-top: 20px;
+  color: grey;
+}
+
+.contact .form {
+  flex-basis: 60%;
+}
+
+.contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-height: 200px;
+}
+.contact .contact-form .form-item-wrapper {
+  width: 50%;
+}
+.contact .contact-form .form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 .contact .contact-form .description {
-  grid-column: 1;
-  grid-row: 1;
   font-weight: 300;
   font-size: 18px;
   color: grey;
@@ -776,31 +795,6 @@ video#heroVideo {
     height: 50px;
 }
 
-.contact .contact-form #email {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.contact .contact-form #name {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.contact .contact-form #company {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.contact .contact-form #website {
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.contact .contact-form #interested {
-    grid-column: 2;
-    grid-row: 3;
-}
-
 .contact .contact-form .dropdown {
     box-sizing: border-box;
     width: 100%;
@@ -811,41 +805,38 @@ video#heroVideo {
     padding-left: 5px;
 }
 
-.contact .contact-form #interested {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.contact .contact-form #accept-terms {
-  grid-row: 6;
-  grid-column-start: 2;
-  grid-column-end: 4;
-
-}
-
 .contact .contact-form .message {
-    grid-row: 4;
-    grid-column-start: 2;
-    grid-column-end: 4;
-
     width: 100%;
+    height: 250px;
 }
 
 .contact .contact-form #message {
-    height: 300px;
+    height: 90%;
+    width: 100%;
 }
 
 .contact .contact-form #submit-button {
-  grid-row: 7;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  margin: 50px 0 0 0;
   text-align: center;
+}
+
+.contact #accept-terms {
+
+margin: 20px auto;
+}
+
+.contact .checkbox {
+  display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: flex-end;
+}
+
+.contact .terms-accept {
+  font-size:12px !important;
 }
 
 .contact .contact-form #submit {
     width: 150px;
-    margin: 20px auto;
     height: 50px;
 
     background-color: #000000;
@@ -964,7 +955,7 @@ footer .copyright a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 html{
@@ -1168,6 +1159,7 @@ html{
   float: right;
   padding-left: 10px;
   padding-bottom: 10px;
+  height: 48px;
 }
 
 @media (max-width: 450px) {
